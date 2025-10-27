@@ -37,6 +37,9 @@ public class UIManager : MonoBehaviour
     {
         var view = GetView<T>();
         if (view == null) return;
+
+        HideAll();
+        view?.Show();
     }
 
 
